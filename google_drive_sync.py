@@ -25,7 +25,8 @@ def delete_existing_archive(path):
             messagebox.showerror("Error", f"Could not delete existing archive:\n{e}")
             return False
     return True
-
+#including a name
+#jeet mukherjee
 def encrypt_with_7zip():
     try:
         password = get_password()
@@ -74,3 +75,4 @@ tk.Button(root, text="Push", command=push_file, width=30, height=2).pack(pady=10
 tk.Button(root, text="Pull", command=pull_file, width=30, height=2).pack()
 
 root.mainloop()
+
